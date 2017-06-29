@@ -16,28 +16,37 @@
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E6%97%B6%E5%BA%8F%E5%9B%BE1.png)
 
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E6%97%B6%E5%BA%8F%E5%9B%BE2.png)
+
+
 数据库结构
 
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E6%95%B0%E6%8D%AE%E5%BA%93.PNG)
 
 系统运行结果主要界面截
 
-#学生登录
+
+学生登录
+---------
 
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E5%AD%A6%E7%94%9F%E7%99%BB%E5%BD%95.PNG)
 
-#学生选课
+学生选课
+------------
 
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E5%AD%A6%E7%94%9F%E9%80%89%E8%AF%BE.PNG)
 
-#教师增删改
+
+教师增删改
+-----------
 
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E6%95%99%E5%B8%88%E5%A2%9E%E5%88%A0%E6%94%B9.PNG)
 
-#课程增删改
+课程增删改
+------------
 
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E8%AF%BE%E7%A8%8B%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9.PNG)
 
-#选课情况和成绩查询
+选课情况和成绩查询
+----------------
 
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E9%80%89%E8%AF%BE%E6%83%85%E5%86%B5%E5%92%8C%E6%88%90%E7%BB%A9.PNG)
