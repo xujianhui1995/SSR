@@ -1,20 +1,21 @@
 # SSR
 
-展示系统分层结构图
+系统分层结构图
 
 
-![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84%E5%9B%BE.PNG
+![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E7%B3%BB%E7%BB%9F%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84%E5%9B%BE.PNG)
 
 系统领域类图
 
 
-![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E7%B1%BB%E5%9B%BE.PNG
+![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E7%B1%BB%E5%9B%BE.PNG)
 
 顺序图
 
 
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E6%97%B6%E5%BA%8F%E5%9B%BE1.png)
 
+![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E6%97%B6%E5%BA%8F%E5%9B%BE2.png)
 数据库结构
 
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E6%95%B0%E6%8D%AE%E5%BA%93.PNG)
