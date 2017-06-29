@@ -23,19 +23,46 @@
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E6%95%B0%E6%8D%AE%E5%BA%93.PNG)
 
 选课逻辑实现
--------------
+------------
 
-planOfStudy类
+PlanOfStudy类
 
->
+	private Student student;
+	private List<Course> courselist;
 
-  public boolean inPlan(Student s) {
+Section类
+	
+	public boolean inPlan(Student s) {
 		for (Course course : s.getPlan().getCourselist()) {
 			if (this.getRepresentedCourse().getCourseNo().equals(course.getCourseNo())) {
 				return true;
 			}
 		}
 		return false;
+	}
+	public EnrollmentStatus enroll(Student s) {
+		Transcript transcript = s.getTranscript();
+		if (s.isCurrentlyEnrolledInSimilar(this) || transcript.verifyCompletion(this.getRepresentedCourse())) {
+			return EnrollmentStatus.prevEnroll;
+		}
+
+		Course c = this.getRepresentedCourse();
+		if (c.hasPrerequisites()) {
+			for (Course pre : c.getPrerequisites()) {
+				if (!transcript.verifyCompletion(pre)) {
+					return EnrollmentStatus.prereq;
+				}
+			}
+		}
+
+		if (!this.confirmSeatAvailability()&&!this.inPlan(s)) {
+			return EnrollmentStatus.secFull;
+		}
+
+		enrolledStudents.put(s.getSsn(), s);
+		s.addSection(this);
+
+		return EnrollmentStatus.success;
 	}
 
 
