@@ -22,6 +22,23 @@
 
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E6%95%B0%E6%8D%AE%E5%BA%93.PNG)
 
+选课逻辑实现
+-------------
+
+planOfStudy类
+
+>
+
+  public boolean inPlan(Student s) {
+		for (Course course : s.getPlan().getCourselist()) {
+			if (this.getRepresentedCourse().getCourseNo().equals(course.getCourseNo())) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+
 系统运行结果主要界面截图
 
 
