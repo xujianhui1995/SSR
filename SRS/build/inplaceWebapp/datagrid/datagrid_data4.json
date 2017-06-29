@@ -1,0 +1,44 @@
+[
+    {
+        "semester": "2005-1",
+        "sections": [
+            {
+                "sectionNo": 1,
+                "dayOfWeek": "M",
+                "timeOfDay": "8:10 - 10:00 PM",
+                "room": "GOVT101",
+                "seatingCapacity": 30,
+                "representedCourse": {
+                    "courseNo": "CMP101",
+                    "courseName": "Beginning Computer Technology",
+                    "credits": 3,
+                    "offeredAsSection": [],
+                    "prerequisites": []
+                },
+                "enrolledStudents": {},
+                "assignedGrades": {}
+            }
+        ]
+    },
+    {
+        "semester": "2005-1",
+        "sections": [
+            {
+                "sectionNo": 2,
+                "dayOfWeek": "W",
+                "timeOfDay": "6:10 - 8:00 PM",
+                "room": "GOVT202",
+                "seatingCapacity": 30,
+                "representedCourse": {
+                    "courseNo": "CMP101",
+                    "courseName": "Beginning Computer Technology",
+                    "credits": 3,
+                    "offeredAsSection": [],
+                    "prerequisites": []
+                },
+                "enrolledStudents": {},
+                "assignedGrades": {}
+            }
+        ]
+    }
+]

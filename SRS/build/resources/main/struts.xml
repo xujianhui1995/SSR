@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+	<package name="simpleton" extends="struts-default,json-default"
+		namespace="/json">
+		<action name="*CourseAction" method="{1}" class="action.CourseAction">
+			<result name="fail"></result>
+			<!-- 返回json类型数据 -->
+			<result type="json">
+				<param name="root">result<!-- result是action中设置的变量名，也是页面需要返回的数据，该变量必须有setter和getter方法 --></param>
+			</result>
+		</action>
+		<action name="*SectionAction" method="{1}" class="action.SectionAction">
+			<result name="fail"></result>
+			<!-- 返回json类型数据 -->
+			<result type="json">
+				<param name="root">result<!-- result是action中设置的变量名，也是页面需要返回的数据，该变量必须有setter和getter方法 --></param>
+			</result>
+		</action>
+		<action name="*PersonAction" method="{1}" class="action.PersonAction">
+			<result name="fail"></result>
+			<!-- 返回json类型数据 -->
+			<result type="json">
+				<param name="root">result<!-- result是action中设置的变量名，也是页面需要返回的数据，该变量必须有setter和getter方法 --></param>
+			</result>
+		</action>
+		<action name="*TranscriptAction" method="{1}" class="action.TranscriptAction">
+			<result name="fail"></result>
+			<!-- 返回json类型数据 -->
+			<result type="json">
+				<param name="root">result<!-- result是action中设置的变量名，也是页面需要返回的数据，该变量必须有setter和getter方法 --></param>
+			</result>
+		</action>
+	</package>
+	<package name="default" extends="struts-default">
+		<action name="UserAction*" class="action.UserAction" method="{1}">
+			<result name="student">/WEB-INF/content/section.jsp</result>
+			<result name="professor">/WEB-INF/content/course.jsp</result>
+			<result name="dean">/WEB-INF/content/course.jsp</result>
+			<result name="redo">/WEB-INF/content/login.jsp</result>
+		</action>
+		<action name="SectionAction*" class="action.SectionAction"
+			method="{1}">
+			<result name="success">/WEB-INF/content/section.jsp</result>
+		</action>
+		<action name="CourseAction*" class="action.CourseAction"
+			method="{1}">
+			<result name="success">/WEB-INF/content/course.jsp</result>
+		</action>
+		<action name="PersonAction*" class="action.PersonAction"
+			method="{1}">
+			<result name="professor">/WEB-INF/content/professor.jsp</result>
+		</action>
+		<action name="*">
+			<result>/WEB-INF/content/{1}.jsp</result>
+		</action>
+	</package>
+
+
+
+
+</struts>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>DataGrid with Toolbar - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../easyui/demo.css">
+	<script type="text/javascript" src="../easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+</head>
+<body>
+	<h2>选课列表</h2>
+	<div style="margin:10px 0;"></div>
+	<table class="easyui-datagrid" title="选课列表" style="width:800px;height:250px"
+			data-options="rownumbers:true,url:'datagrid_data4.json',method:'get',toolbar:toolbar">
+		<thead>
+			<tr>
+				<th data-options="field:'ck',checkbox:true"></th>
+				<th data-options="field:'semester'">semester</th>
+			</tr>
+		</thead>
+	</table>
+	<script type="text/javascript">
+		var toolbar = [{
+			text:'Add',
+			iconCls:'icon-add',
+			handler:function(){alert('add')}
+		},{
+			text:'Cut',
+			iconCls:'icon-cut',
+			handler:function(){alert('cut')}
+		},'-',{
+			text:'Save',
+			iconCls:'icon-save',
+			handler:function(){alert('save')}
+		}];
+	</script>
+</body>
+</html>

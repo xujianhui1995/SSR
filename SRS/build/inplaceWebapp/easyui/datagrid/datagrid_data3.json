@@ -1,0 +1,43 @@
+[
+	{
+		"courseNo": "CMP283",
+		"courseName": "Higher Level Languages (Java)",
+		"credits": 3,
+		"offeredAsSection": [],
+		"prerequisites": []
+	},
+	{
+		"courseNo": "CMP999",
+		"courseName": "Living Brain Computers",
+		"credits": 3,
+		"offeredAsSection": [],
+		"prerequisites": []
+	},
+	{
+		"courseNo": "OBJ101",
+		"courseName": "Object Methods for Software Development",
+		"credits": 3,
+		"offeredAsSection": [],
+		"prerequisites": {
+			"courseNo": "CMP101",
+			"courseName": "Beginning Computer Technology",
+			"credits": 3,
+			"offeredAsSection": [],
+			"prerequisites": []
+		}
+	},
+	{
+		"courseNo": "CMP101",
+		"courseName": "Beginning Computer Technology",
+		"credits": 3,
+		"offeredAsSection": [],
+		"prerequisites": []
+	},
+	{
+		"courseNo": "ART101",
+		"courseName": "Beginning Basketweaving",
+		"credits": 3,
+		"offeredAsSection": [],
+		"prerequisites": []
+	}
+]
