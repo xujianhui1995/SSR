@@ -22,7 +22,7 @@
 
 ![](https://github.com/xujianhui1995/SSR/blob/master/%E6%88%AA%E5%9B%BE/%E6%95%B0%E6%8D%AE%E5%BA%93.PNG)
 
-系统运行结果主要界面截
+系统运行结果主要界面截图
 
 
 学生登录
